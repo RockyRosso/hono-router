@@ -1,5 +1,4 @@
 {
-    "name": "codespaces-blank",
     "type": "module",
     "scripts": {
         "dev": "tsx watch src/index.ts",
