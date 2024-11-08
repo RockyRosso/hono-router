@@ -97,21 +97,27 @@ export default class Server {
         switch (routeMethod) {
             case "post":
                 this.app.post(urlRoute, routeFile.default);
+                break;
 
             case "get":
                 this.app.get(urlRoute, routeFile.default);
+                break;
 
             case "put":
                 this.app.put(urlRoute, routeFile.default);
+                break;
 
             case "delete":
                 this.app.delete(urlRoute, routeFile.default);
+                break;
 
             case "patch":
                 this.app.patch(urlRoute, routeFile.default);
+                break;
 
             default:
                 this.app.all(urlRoute, routeFile.default);
+                break;
         }
     }
 }
